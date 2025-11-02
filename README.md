@@ -15,13 +15,12 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" />
-  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
-  <img src="https://img.shields.io/badge/TOML-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/matplotlib-11557C?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/seaborn-4C72B0?style=for-the-badge" />
   <img src="https://img.shields.io/badge/uv-9900FF?style=for-the-badge" />
 </p>
 
@@ -29,7 +28,7 @@
 
 Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam is a comprehensive machine learning pipeline tailored for accurate weather prediction in Southern Vietnam. It streamlines data preprocessing, feature engineering, model training, and evaluation within a reproducible framework, enabling developers and students to build robust forecasting systems.
 
-**Why Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam?**
+**Why Forecast Maximum Temperature in Southern Vietnam?**
 
 This project aims to deliver precise temperature forecasts by leveraging advanced ML techniques and good MLOps practices. The core features include:
 
