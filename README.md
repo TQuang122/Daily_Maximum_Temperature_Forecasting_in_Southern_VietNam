@@ -1,4 +1,30 @@
-# 🌤️ Daily Maximum Temperature Forecasting in Southern Vietnam
+<h1 align="center">DAILY_MAXIMUM_TEMPERATURE_FORECASTING_IN_SOUTHERN_VIETNAM</h1>
+
+<p align="center"><i>Predicting Tomorrow’s Heat, Today’s Innovation</i></p>
+
+<p align="center">
+  <!-- last commit -->
+  <img src="https://img.shields.io/github/last-commit/TQuang122/Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam?style=for-the-badge" />
+  <!-- giả lập tỷ lệ notebook -->
+  <img src="https://img.shields.io/badge/jupyter%20notebook-99.8%25-blue?style=for-the-badge" />
+  <!-- số ngôn ngữ -->
+  <img src="https://img.shields.io/github/languages/count/TQuang122/Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam?style=for-the-badge" />
+</p>
+
+<p align="center"><i>Built with the tools and technologies:</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/TOML-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/uv-9900FF?style=for-the-badge" />
+</p>
+
 
 A comprehensive machine learning project for predicting maximum temperature in Southern Vietnam using weather data from 2015-2025.
 
