@@ -1,4 +1,4 @@
-<h1 align="center">DAILY_MAXIMUM_TEMPERATURE_FORECASTING_IN_SOUTHERN_VIETNAM</h1>
+<h1 align="center">DAILY MAXIMUM TEMPERATURE FORECASTING IN SOUTHERN VIETNAM</h1>
 
 <p align="center"><i>Predicting Tomorrow’s Heat, Today’s Innovation</i></p>
 
@@ -25,22 +25,20 @@
   <img src="https://img.shields.io/badge/uv-9900FF?style=for-the-badge" />
 </p>
 
+## Overview
 
-A comprehensive machine learning project for predicting maximum temperature in Southern Vietnam using weather data from 2015-2025.
+Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam is a comprehensive machine learning pipeline tailored for accurate weather prediction in Southern Vietnam. It streamlines data preprocessing, feature engineering, model training, and evaluation within a reproducible framework, enabling developers and students to build robust forecasting systems.
 
-This project is part of the ADY201m course at FPT University and is implemented in Python with a focus on a reproducible ML workflow (data → features → model → evaluation → artifacts).
+**Why Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam?**
 
-## 🌟 Overview
+This project aims to deliver precise temperature forecasts by leveraging advanced ML techniques and good MLOps practices. The core features include:
 
-This project implements a complete machine learning pipeline to predict maximum daily temperature (`tempmax`) in Southern Vietnam using historical weather data. The project includes data preprocessing, feature engineering, model training, hyperparameter optimization, and prediction capabilities.
-
-### 🎯 Objectives
-
-- Predict maximum daily temperature with high accuracy
-- Compare multiple ML algorithms (Random Forest, XGBoost, LightGBM, Hist-Gradient Boosting)
-- Implement robust data preprocessing and feature engineering
-- Create a production-ready prediction system
-- Provide comprehensive model evaluation and visualization
+- 🧪 **Model Comparison & Tuning**: Supports multiple algorithms like XGBoost, LightGBM, RandomForest, and Gradient Boosting, with hyperparameter optimization for optimal performance.
+- ⚙️ **Reproducible Pipelines**: Automates data processing, feature engineering, and evaluation, ensuring consistency across experiments.
+- 📊 **Insightful Visualizations**: Provides utilities for performance analysis, feature importance, and model diagnostics.
+- 🚀 **Deployment-Ready Artifacts**: Includes pre-trained models and metadata for seamless integration into production or demo environments.
+- ⏱️ **Time Series Validation**: Implements date-aware cross-validation tailored for temporal data, enhancing model reliability.
+- 🛠️ **Monitoring & Evaluation**: Offers tools for performance tracking and resource profiling to optimize workflows.
 
 ## ✨ Features
 
