@@ -1,6 +1,8 @@
-# 🌤️ Weather Prediction Project
+# 🌤️ Daily Maximum Temperature Forecasting in Southern Vietnam
 
 A comprehensive machine learning project for predicting maximum temperature in Southern Vietnam using weather data from 2015-2025.
+
+This project is part of the ADY201m course at FPT University and is implemented in Python with a focus on a reproducible ML workflow (data → features → model → evaluation → artifacts).
 
 ## 🌟 Overview
 
@@ -26,8 +28,26 @@ This project implements a complete machine learning pipeline to predict maximum 
 - **🚀 Production Ready**: Modular scripts, configuration management, logging
 - **📝 Documentation**: Complete documentation and usage examples
 
+## 🚀 Getting Started
 
+### Prerequisites
+- Python 3.10+
+- pip or uv
 
+### Setup
+```bash
+# create and activate venv (optional)
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# install deps (using uv / or pip)
+uv pip install -r requirements.txt
+```
+
+### Run the pipeline
+```bash
+python -m src.train  # or the main training script in src/
+```
 
 ## 📊 Results
 
@@ -37,8 +57,8 @@ This project implements a complete machine learning pipeline to predict maximum 
 ### Key Insights
 
 - **Best Model**: XGBoost with optimized hyperparameters
-- **Accuracy**: 91% R² score on test data
-- **Error**: Mean Absolute Error of 1.18°C
+- **Accuracy**: 60% R² score on test data
+- **Error**: Mean Absolute Error of 0.98°C
 - **Features**: Temperature, humidity, cloud cover, and solar radiation are most important
 - **Seasonal Patterns**: Strong seasonal effects captured in the model
 
@@ -104,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Lê Hoài Thanh Quang** - *Initial work* - [TQuang122](https://github.com/TQuang122)
 
 ## 🙏 Acknowledgments
 
@@ -117,10 +137,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/yourusername/ADY201m_Proj/issues) page
+1. Check the [Issues](https://github.com/TQuang122/Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam/issues) page
 2. Create a new issue with detailed description
 3. Contact the maintainers
 
 ---
-
-**Note**: This project is part of the ADY201m course at FPT University. For academic use only.
