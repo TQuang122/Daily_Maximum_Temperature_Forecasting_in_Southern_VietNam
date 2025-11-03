@@ -68,44 +68,6 @@ This project aims to deliver precise temperature forecasts by leveraging advance
 - **Features**: Temperature, humidity, cloud cover, and solar radiation are most important
 - **Seasonal Patterns**: Strong seasonal effects captured in the model
 
-### Generated Visualizations
-
-- Model comparison charts
-- Feature importance plots
-- Correlation heatmaps
-- Time series analysis
-- Performance metrics visualization
-
-## 🔧 Development
-
-### Running Tests
-
-```bash
-# Run all tests
-python -m pytest tests/
-
-# Run specific test file
-python -m pytest tests/test_data_pipeline.py
-```
-
-### Code Quality
-
-```bash
-# Format code
-black src/ tests/
-
-# Lint code
-flake8 src/ tests/
-
-# Type checking
-mypy src/
-```
-
-### Adding New Models
-
-1. Add model configuration to `config/model_config.yaml`
-2. Update `ModelTrainer` class in `src/models/train_model.py`
-3. Add model class to the model registry
 
 ## 📈 Performance Monitoring
 
@@ -115,6 +77,9 @@ The project includes comprehensive performance monitoring:
 - **Execution Time**: Monitor processing time for each step
 - **Model Metrics**: Detailed performance metrics for all models
 - **Logging**: Comprehensive logging for debugging and monitoring
+
+![execution_time](./figures/execution_time.png)
+![memory](./figures/memory.png)
 
 ## 🤝 Contributing
 
@@ -130,12 +95,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Lê Hoài Thanh Quang** - *Initial work* - [TQuang122](https://github.com/TQuang122)
+- **Lê Hoài Thanh Quang SE190062** - *Initial work* - [TQuang122](https://github.com/TQuang122)
 
 ## 🙏 Acknowledgments
 
 - FPT University for providing the course framework
-- Weather data sources for the dataset
+- Visual Crossing Weather data sources for the dataset
 - Open source ML libraries (scikit-learn, XGBoost, pandas)
 - The Python data science community
 
