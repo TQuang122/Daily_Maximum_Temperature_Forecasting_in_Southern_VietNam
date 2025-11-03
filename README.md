@@ -52,35 +52,17 @@ This project aims to deliver precise temperature forecasts by leveraging advance
 - **🚀 Production Ready**: Modular scripts, configuration management, logging
 - **📝 Documentation**: Complete documentation and usage examples
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.10+
-- pip or uv
-
-### Setup
-```bash
-# create and activate venv (optional)
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-
-# install deps (using uv / or pip)
-uv pip install -r requirements.txt
-```
-
-### Run the pipeline
-```bash
-python -m src.train  # or the main training script in src/
-```
 
 ## 📊 Results
 
 ### Model Performance
 
+![output](./figures/output.png)
 
 ### Key Insights
 
-- **Best Model**: XGBoost with optimized hyperparameters
+- **Best Model**: Random Forest with optimized hyperparameters
 - **Accuracy**: 60% R² score on test data
 - **Error**: Mean Absolute Error of 0.98°C
 - **Features**: Temperature, humidity, cloud cover, and solar radiation are most important
