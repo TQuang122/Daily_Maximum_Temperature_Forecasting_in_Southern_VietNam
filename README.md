@@ -38,7 +38,8 @@ This project aims to deliver precise temperature forecasts by leveraging advance
 - ⏱️ **Time Series Validation**: Implements date-aware cross-validation tailored for temporal data, enhancing model reliability.
 - 🛠️ **Monitoring & Evaluation**: Offers tools for performance tracking and resource profiling to optimize workflows.
 
-![overview_pipeline](./figures/CleanShot 2025-11-03 at 22.07.36@2x.png)
+![overview_pipeline](./figures/overview_pipeline.png)
+
 ## ✨ Features
 
 - **📊 Comprehensive Data Analysis**: Exploratory data analysis with 70,000+ weather records
