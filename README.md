@@ -96,7 +96,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Authors
 
 - **Lê Hoài Thanh Quang SE190062** - *Initial work* - [TQuang122](https://github.com/TQuang122)
-
+- **Thái Việt Nam SE192065**
+- **Nguyễn Tài Phúc SE191139**
+- **Vũ Thanh Hoà SE190222**
 ## 🙏 Acknowledgments
 
 - FPT University for providing the course framework
