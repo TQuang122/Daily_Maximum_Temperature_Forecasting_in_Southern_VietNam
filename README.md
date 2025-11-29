@@ -23,6 +23,12 @@
   <img src="https://img.shields.io/badge/uv-9900FF?style=for-the-badge" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Optuna-HPO-blueviolet?style=for-the-badge&logo=optuna" />
+  <img src="https://img.shields.io/badge/TimeSeries-ROCV-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SHAP-Explainability-red?style=for-the-badge" />
+</p>
+
 ## 📘 Overview
 
 **DeepThermo** is an end‑to‑end machine learning system designed to forecast the **next-day maximum temperature** for 18 provinces across Southern Vietnam using 10 years of historical weather data (2015–2025).  
@@ -44,6 +50,14 @@ This project addresses that need by leveraging modern ML techniques and robust t
 
 The goal is to provide a powerful, transparent, and extensible framework for temperature forecasting — enabling developers, students, and researchers to build accurate and interpretable climate‑related ML systems.
 
+## 🌟 Highlights
+
+- **High‑Accuracy Forecasting** — Achieves sub‑1°C MAE using optimized ensemble models on real-world weather data.
+- **Robust Time‑Series Validation** — Rolling‑Origin CV ensures no leakage and realistic model evaluation.
+- **10‑Year Regional Dataset** — Covers 18 provinces with >70,000 cleaned weather records.
+- **Strong Interpretability** — SHAP-driven pipeline reveals transparent, trustworthy predictions.
+- **Production‑Ready Artifacts** — Fully exportable models, schemas, feature lists, and evaluation reports.
+- **End‑to‑End Workflow** — From raw data → preprocessing → FE → training → HPO → evaluation → export.
 
 ## ✨ Features
 
@@ -111,31 +125,47 @@ The goal is to provide a powerful, transparent, and extensible framework for tem
   - Artifact storage
 
 
+## 🧮 Model Comparison
+
+| Model                     | Validation MAE | Test MAE | Test RMSE | Test R² |
+|---------------------------|----------------|----------|-----------|---------|
+| **LightGBM (Best)**       | **0.8860**     | **0.9772** | 1.2801    | 0.6089 |
+| Random Forest             | 0.9341         | 0.9873   | 1.2801    | 0.6088 |
+| XGBoost                   | 0.8788         | 0.9971   | 1.3002    | 0.6001 |
+| HistGradientBoosting      | 0.9360         | 1.0375   | 1.3500    | 0.5802 |
+| AdaBoost                  | 1.1008         | 1.0793   | 1.3756    | 0.5483 |
+
+📌 *LightGBM consistently provides the best generalization across Validation and Test.*
 
 ## 📊 Results
 
-### Model Performance
+DeepThermo delivers strong predictive performance across all evaluation datasets.  
+A combination of engineered features (FE + DT) and optimized ensemble models drives high accuracy.
 
-![output](./figures/output.png)
+### 🔥 Key Outcomes
 
-### Key Insights
+- **Best Model:** LightGBM with tuned hyperparameters  
+- **Generalization:** Test MAE below 1°C  
+- **Stability:** Very small gap between Validation and Test scores  
+- **Feature Influence:** Temperature, humidity, cloud cover, visibility, and solar radiation remain dominant contributors  
 
-- **Best Model**: Random Forest with optimized hyperparameters
-- **Accuracy**: 60% R² score on test data
-- **Error**: Mean Absolute Error of 0.98°C
-- **Features**: Temperature, humidity, cloud cover, and solar radiation are most important
-- **Seasonal Patterns**: Strong seasonal effects captured in the model
+### 📉 Visual Insights
 
+![model_performance](./figures/output.png)
+
+The visualization summarizes performance across models, highlighting LightGBM and Random Forest as the most stable and accurate predictors.
 
 ## 📈 Performance Monitoring
 
-The project includes comprehensive performance monitoring:
+DeepThermo logs performance metrics across all computation steps to ensure reliability and reproducibility.
 
-- **Memory Usage**: Track memory consumption during training
-- **Execution Time**: Monitor processing time for each step
-- **Model Metrics**: Detailed performance metrics for all models
-- **Logging**: Comprehensive logging for debugging and monitoring
+### What We Track
+- **Execution Time:** Profiling of each training & evaluation stage  
+- **Memory Usage:** Peak and delta memory monitoring via psutil  
+- **CPU Utilization:** Tracks multi-core efficiency during model fitting  
+- **Model‑level Metrics:** MAE, RMSE, and R² logged per split and dataset  
 
+### Visual Logs
 ![execution_time](./figures/execution_time.png)
 ![memory](./figures/memory.png)
 
@@ -153,10 +183,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Lê Hoài Thanh Quang SE190062** - *Initial work* - [TQuang122](https://github.com/TQuang122)
-- **Thái Việt Nam SE192065**
-- **Nguyễn Tài Phúc SE191139**
-- **Vũ Thanh Hoà SE190222**
+This project is collaboratively developed by:
+
+- **Lê Hoài Thanh Quang (SE190062)** — Project Lead & Core Developer  
+- **Thái Việt Nam (SE192065)** — Data Processing & Engineering  
+- **Nguyễn Tài Phúc (SE191139)** — Modeling & Evaluation  
+- **Vũ Thanh Hòa (SE190222)** — Visualization & Documentation
+
+We appreciate the contributions and collaboration that made DeepThermo possible.
+
 ## 🙏 Acknowledgments
 
 - FPT University for providing the course framework
