@@ -129,11 +129,12 @@ The goal is to provide a powerful, transparent, and extensible framework for tem
 
 | Model                     | Validation MAE | Test MAE | Test RMSE | Test R² |
 |---------------------------|----------------|----------|-----------|---------|
-| **LightGBM (Best)**       | **0.8860**     | **0.9772** | 1.2801    | 0.6089 |
-| Random Forest             | 0.9341         | 0.9873   | 1.2801    | 0.6088 |
-| XGBoost                   | 0.8788         | 0.9971   | 1.3002    | 0.6001 |
-| HistGradientBoosting      | 0.9360         | 1.0375   | 1.3500    | 0.5802 |
-| AdaBoost                  | 1.1008         | 1.0793   | 1.3756    | 0.5483 |
+| **LightGBM (Best)**       | **0.893**     | **0.9772** | **1.2772**    | **0.6106** |
+| Stacking (Optimized)       | 0.8840         | 0.9843   | 1.2793    | 0.6094 |
+| Stacking v3 (Optimized)    | 0.8840         | 0.9842   | 1.2796    | 0.6092 |
+| Random Forest             | 0.9341         | 0.9843   | 1.2785    | 0.6099 |
+| XGBoost                   | 0.8788         | 0.9971   | 1.2972    | 0.5983 |
+| HistGradientBoosting      | 0.9360         | 1.0375   | 1.3327    | 0.5761 |
 
 📌 *LightGBM consistently provides the best generalization across Validation and Test.*
 
@@ -145,6 +146,7 @@ A combination of engineered features (FE + DT) and optimized ensemble models dri
 ### 🔥 Key Outcomes
 
 - **Best Model:** LightGBM with tuned hyperparameters  
+- **Strong Runner‑Up:** Stacking ensemble models achieve accuracy extremely close to LightGBM while providing improved robustness.
 - **Generalization:** Test MAE below 1°C  
 - **Stability:** Very small gap between Validation and Test scores  
 - **Feature Influence:** Temperature, humidity, cloud cover, visibility, and solar radiation remain dominant contributors  
@@ -153,7 +155,7 @@ A combination of engineered features (FE + DT) and optimized ensemble models dri
 
 ![model_performance](./figures/output.png)
 
-The visualization summarizes performance across models, highlighting LightGBM and Random Forest as the most stable and accurate predictors.
+The visualization summarizes performance across models, highlighting LightGBM as the top performer and stacking ensembles as highly competitive, stable alternatives.
 
 ## 📈 Performance Monitoring
 
@@ -168,6 +170,86 @@ DeepThermo logs performance metrics across all computation steps to ensure relia
 ### Visual Logs
 ![execution_time](./figures/execution_time.png)
 ![memory](./figures/memory.png)
+
+## 🧠 SHAP Interpretability Demo
+
+DeepThermo uses **SHAP (SHapley Additive exPlanations)** to provide transparent, human‑interpretable insights into model behavior.
+
+### 🔍 Why SHAP?
+- Understand how each feature influences predictions  
+- Diagnose model bias or over-reliance  
+- Explain individual predictions for debugging or reporting  
+- Build trust with non-technical stakeholders  
+
+### 📊 Global Interpretability
+The global explanations highlight which features contribute most to next‑day maximum temperature predictions.
+
+![shap_summary](./figures/shap_summary.png)
+
+### 🌡 Local Interpretability (Per Prediction)
+For a single forecast, SHAP reveals *why* the model predicts a certain temperature.
+
+![shap_waterfall](./figures/shap_waterfall.png)
+
+### 🧩 What We Learned from SHAP
+- **Current day temperature** and **feels-like metrics** dominate predictive power  
+- **Humidity**, **cloud cover**, and **solar radiation** significantly affect next‑day temperature  
+- **Visibility** and **wind direction** show important contextual influence  
+- **Seasonal features (sin/cos)** help capture macro‑periodicity  
+
+These insights validate that the model aligns with real-world meteorological dynamics, increasing confidence in deployment scenarios.
+
+## 🔧 Installation
+
+This project uses [`uv`](https://docs.astral.sh/uv/) for fast, reproducible Python environments.
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/TQuang122/DeepThermo.git
+cd DeepThermo
+```
+
+### 2️⃣ Install `uv` (if you haven't already)
+
+Follow the official instructions: https://docs.astral.sh/uv/getting-started/installation/
+
+For example on Unix-like systems:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### 3️⃣ Create and activate a virtual environment with `uv`
+
+```bash
+uv venv
+```
+
+Activate it:
+
+- **Linux/macOS:**
+  ```bash
+  source .venv/bin/activate
+  ```
+- **Windows (PowerShell):**
+  ```powershell
+  .venv\Scripts\Activate.ps1
+  ```
+
+
+### 4️⃣ Install dependencies with `uv sync` (using `pyproject.toml`)
+
+All dependencies are declared in `pyproject.toml`. To install them:
+
+```bash
+uv sync
+```
+
+This will create (or update) the local environment based on the lockfile and `pyproject.toml`.  
+After this, you can run notebooks or scripts (e.g. training, evaluation, API) inside the activated environment.
+
+
 
 ## 🤝 Contributing
 
@@ -194,7 +276,7 @@ We appreciate the contributions and collaboration that made DeepThermo possible.
 
 ## 🙏 Acknowledgments
 
-- FPT University for providing the course framework
+- FPT University for providing the course framework from ADY201m
 - Visual Crossing Weather data sources for the dataset
 - Open source ML libraries (scikit-learn, XGBoost, pandas)
 - The Python data science community
