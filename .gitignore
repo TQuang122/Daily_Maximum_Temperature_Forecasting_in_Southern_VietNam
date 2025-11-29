@@ -9,4 +9,4 @@ wheels/
 # Virtual environments
 .venv
 .DS_Store
-artifacts/
+# artifacts/ - Now tracked with Git LFS for large model files

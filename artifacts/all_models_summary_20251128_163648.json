@@ -1,0 +1,31 @@
+{
+  "timestamp": "20251128_163648",
+  "models_saved": 4,
+  "best_model": "lgb",
+  "models": {
+    "xgb": {
+      "model_file": "xgb_optimized_20251128_163648.joblib",
+      "metadata_file": "xgb_optimized_metadata_20251128_163648.json",
+      "test_mae": 0.9971042347723916,
+      "cv_mae": 0.8787794106599515
+    },
+    "lgb": {
+      "model_file": "lgb_optimized_20251128_163648.joblib",
+      "metadata_file": "lgb_optimized_metadata_20251128_163648.json",
+      "test_mae": 0.9772292611466002,
+      "cv_mae": 0.8930256748663233
+    },
+    "hgb": {
+      "model_file": "hgb_optimized_20251128_163648.joblib",
+      "metadata_file": "hgb_optimized_metadata_20251128_163648.json",
+      "test_mae": 1.0375067115688095,
+      "cv_mae": 0.9359812759834655
+    },
+    "rf": {
+      "model_file": "rf_optimized_20251128_163648.joblib",
+      "metadata_file": "rf_optimized_metadata_20251128_163648.json",
+      "test_mae": 0.9842883211559561,
+      "cv_mae": 0.9446525725459116
+    }
+  }
+}
