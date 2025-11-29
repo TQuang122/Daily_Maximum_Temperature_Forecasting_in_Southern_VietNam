@@ -250,15 +250,6 @@ This will create (or update) the local environment based on the lockfile and `py
 After this, you can run notebooks or scripts (e.g. training, evaluation, API) inside the activated environment.
 
 
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -285,7 +276,7 @@ We appreciate the contributions and collaboration that made DeepThermo possible.
 
 If you encounter any issues or have questions:
 
-1. Check the [Issues](https://github.com/TQuang122/Daily_Maximum_Temperature_Forecasting_in_Southern_of_VietNam/issues) page
+1. Check the [Issues](https://github.com/TQuang122/DeepThermo/issues) page
 2. Create a new issue with detailed description
 3. Contact the maintainers
 
