@@ -129,11 +129,11 @@ The goal is to provide a powerful, transparent, and extensible framework for tem
 
 | Model                     | Validation MAE | Test MAE | Test RMSE | Test R² |
 |---------------------------|----------------|----------|-----------|---------|
-| **LightGBM (Best)**       | **0.893**     | **0.9772** | **1.2772**    | **0.6106** |
-| Stacking (Optimized)       | 0.8840         | 0.9843   | 1.2793    | 0.6094 |
-| Stacking v3 (Optimized)    | 0.8840         | 0.9842   | 1.2796    | 0.6092 |
+| **LightGBM (Best)**       | 0.893     | **0.9772** | **1.2772**    | **0.6106** |
+| Stacking (Optimized)      | ____         | 0.9843   | 1.2793    | 0.6094 |
+| Stacking v3 (Optimized)   | ____        | 0.9842   | 1.2796    | 0.6092 |
 | Random Forest             | 0.9341         | 0.9843   | 1.2785    | 0.6099 |
-| XGBoost                   | 0.8788         | 0.9971   | 1.2972    | 0.5983 |
+| XGBoost                   | **0.8788**         | 0.9971   | 1.2972    | 0.5983 |
 | HistGradientBoosting      | 0.9360         | 1.0375   | 1.3327    | 0.5761 |
 
 📌 *LightGBM consistently provides the best generalization across Validation and Test.*
@@ -222,7 +222,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### 3️⃣ Create and activate a virtual environment with `uv`
 
-```bash
+```bash 
 uv venv
 ```
 
