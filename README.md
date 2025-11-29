@@ -136,7 +136,7 @@ The goal is to provide a powerful, transparent, and extensible framework for tem
 | XGBoost                   | **0.8788**         | 0.9971   | 1.2972    | 0.5983 |
 | HistGradientBoosting      | 0.9360         | 1.0375   | 1.3327    | 0.5761 |
 
-📌 *LightGBM consistently provides the best generalization across Validation and Test.*
+📌 *LightGBM consistently provides the best generalization in Test.*
 
 ## 📊 Results
 
