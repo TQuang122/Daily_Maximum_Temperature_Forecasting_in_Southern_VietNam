@@ -1,4 +1,4 @@
-<h1 align="center">DeepThermo: Time-Series Temperature Forecasting for Southern Vietnam (2015–2025)</h1>
+<h1 align="center">DeepThermo: Tree-Based Ensemble Models for Short-term Maximum Temperature Forcasting in Southern VietNam</h1>
 
 <p align="center"><i>Predicting Tomorrow’s Heat, Today’s Innovation</i></p>
 
